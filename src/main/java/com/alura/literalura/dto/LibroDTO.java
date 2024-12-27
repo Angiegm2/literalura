@@ -1,4 +1,12 @@
 package com.alura.literalura.dto;
 
-public record LibroDTO() {
+import java.util.List;
+
+public record LibroDTO(
+        Long id,
+        String titulo,
+        List<AutorDTO> autores,
+        String idiomas,
+        Double numeroDeDescargas
+) {
 }
